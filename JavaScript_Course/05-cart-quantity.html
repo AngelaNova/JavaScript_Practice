@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Cart Quantity </title>
+      <style>
+           
+      </style>
+        
+  </head>
+<body>
+  <h4>Cart Quantity</h4>
+  <button onclick="
+    console.log('Cart quantity: ' + cartQ);
+  ">
+    Show Quantity
+  </button>
+  <button onclick="
+    cartQ+= 1; //shortcut variable++;
+    console.log('Cart quantity: ' + cartQ);
+  ">
+    Add to Cart
+  </button>
+  <button onclick="
+  cartQ=cartQ + 2; //shortcut -> +=2 the same
+  console.log('Cart quantity: ' + cartQ);
+">
+    +2
+  </button>
+  <button onclick="
+  cartQ=cartQ + 3;
+  console.log('Cart quantity: ' + cartQ);
+">
+    +3
+  </button>
+  <button onclick="
+  cartQ=0;
+  console.log('Cart quantity: ' + cartQ);
+  console.log('Car quantity was reset');
+">
+    Reset Cart
+  </button>
+  <script>
+    let cartQ = 0;
+
+
+  </script>
+</body>
+
+</html>
+
