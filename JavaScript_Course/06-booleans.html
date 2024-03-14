@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Booleans </title>
+  </head>
+<body>
+  <script>
+
+
+  console.log(5 =='5.00');  //True  //double equal converts both values in the same type while triple equal compares them as is,
+  console.log(5 ==='5.00'); //False // so false in this case, but true for double equal 
+
+    if (true){
+      console.log('hello');
+    }
+    else{
+      console.log('else');
+    }
+
+    const age =15;
+
+    if(age>= 16){
+      console.log('You can drive');
+    }else if(age>= 14) {
+      console.log('Almost there');
+    }else {
+      console.log('You can not drive');
+    }
+
+    //truthy value -> any value that is not on the falsy list
+    if(5){
+      console.log('truthy');
+    }
+
+    //falsy -> short falsy list -> false, 0, '', NaN, undefined, null : NaN = not a number
+    if(0){
+      console.log('truthy');
+    }
+
+
+    //shortcut for the following if statement after; advantage - result can be saved in a variable
+     const result = 0? 'truthy':'falsy'
+
+    console.log(result);
+
+    //if statement
+    if(true){
+      'truthy'
+    } else {
+      'falsy'
+    }
+
+    const message = 5 && 'hello'; //message = 'hello'
+
+    console.log(message);
+
+    //default operator is a shortcut for if statement
+
+
+
+  </script>
+</body>
+
+</html>
+
