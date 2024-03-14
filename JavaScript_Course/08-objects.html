@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Objects </title>
+  </head>
+<body>
+  <script>
+    //name,price are property
+    const product = {
+      name: 'socks',
+      price: 1090,
+    };
+
+    console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name = 'cotton socks';
+    console.log(product);
+
+    product.newProperty = true;
+    console.log(product);
+
+    delete product.newProperty;
+    console.log(product);
+    //objects make code more readable
+
+
+    const prod2 = {
+      name:'shirt',
+      ['delivery-time']: '1 day',
+      rating: {
+        stars:4.5,
+        count: 87,
+      },
+      fun: function function1(){
+        console.log('function inside object');
+    }
+  }
+    prod2.fun();
+
+    console.log(prod2);
+    console.log(prod2.name);
+    console.log(prod2['name']);
+
+    console.log(prod2['delivery-time']);
+    console.log(prod2.rating.count);
+
+   
+   // JSON -> JavaScript Object Notation: 
+   // -a syntaz; -similar to JavaScript object
+   // -but has less features // we use JSON to send data between cps ->  when we store data
+
+  console.log(JSON.stringify(prod2));
+  prod2JSON = JSON.stringify(prod2); 
+
+  console.log(JSON.parse(prod2JSON)); 
+    
+
+  </script>
+</body>
+
+</html>
+

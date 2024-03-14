@@ -15,23 +15,59 @@
     Show Quantity
   </button>
   <button onclick="
+   if (cartQ>=10){alert('The cart is full')}
+   else{
     cartQ+= 1; //shortcut variable++;
     console.log('Cart quantity: ' + cartQ);
+   }
   ">
     Add to Cart
   </button>
   <button onclick="
-  cartQ=cartQ + 2; //shortcut -> +=2 the same
-  console.log('Cart quantity: ' + cartQ);
+  if (cartQ<1){alert('Not enough items in the cart')}
+     else{
+      cartQ-= 1; 
+      console.log('Cart quantity: ' + cartQ);
+     }
+  ">
+      Remove from Cart
+    </button>
+  <button onclick="
+if (cartQ>=9){alert('The cart is full')}
+   else{
+    cartQ+= 2; 
+    console.log('Cart quantity: ' + cartQ);
+   }
 ">
     +2
   </button>
   <button onclick="
-  cartQ=cartQ + 3;
-  console.log('Cart quantity: ' + cartQ);
+  if (cartQ<2){alert('Not enough items in the cart')}
+     else{
+      cartQ-= 2; 
+      console.log('Cart quantity: ' + cartQ);
+     }
+  ">
+      -2
+    </button>
+  <button onclick="
+  if (cartQ>=8){alert('The cart is full')}
+   else{
+    cartQ+= 3; //shortcut variable++;
+    console.log('Cart quantity: ' + cartQ);
+   }
 ">
     +3
   </button>
+  <button onclick="
+  if (cartQ<3){alert('Not enough items in the cart')}
+     else{
+      cartQ-= 3; 
+      console.log('Cart quantity: ' + cartQ);
+     }
+  ">
+      -3
+    </button>
   <button onclick="
   cartQ=0;
   console.log('Cart quantity: ' + cartQ);
