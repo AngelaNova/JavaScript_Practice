@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> DOM</title>
+  </head>
+<body>
+  <button>hello</button>
+  <button class="js-button">second button</button>
+  <script>
+    //document is an object - linked to webpage
+    //document.body.innerHTML = 'hello';
+    //document.title = 'Good job!';
+
+    /*console.log(document.title);
+    document.title = 'Changed';
+    console.log(document.body); 
+    //HTML is converted to JS object
+    console.log(typeof document.body);
+    console.log(document.body.innerHTML);
+    document.body.innerHTML ='<button>Good Job!</button>'; */
+    document.querySelector('button'.innerHTML);
+    //button element is a JS object
+    document.querySelector('button').innerHTML = 'changed';
+    //this method selects the first button
+
+    //to select the second button, use the class
+    document.querySelector('.js-class');
+    const buttonElement = document.querySelector('.js-button');
+
+    console.log(buttonElement);
+    //DOM combine JS and HTML together and it gives JD full controle of the webpage
+
+    
+    
+  </script>
+</body>
+
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> DOM Projects</title>
+    <style>
+      .body{
+        font-family: Arial;
+    
+      }
+
+
+
+      .subscribe-button{
+        border:none;
+        background-color: black;
+        color:white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor:pointer;
+        margin-bottom: 30px;
+      }
+
+      .is-subscribed{
+        background-color: rgb(240,240,240);
+        color:black;
+      }
+
+      .cost-input{
+        font-size:15px;
+        padding: 10px;
+
+      }
+      
+      .calculate-button{
+        background-color: green;
+        color:white;
+        border: none;
+        font-size:15px;
+        padding:12px
+       
+
+      }
+
+
+    </style>
+  </head>
+<body>
+  <p>YouTube Subscribe Button</p>
+  <button class ="js-sub subscribe-button" onclick="
+    sub();"
+    > Subscribe </button>
+  
+
+    <p>Amazon Shipping Calculator</p>
+  <input placeholder="Cost of Order" class="js-input cost-input" onkeydown=" enterKeyCalc(event);">
+  <button  class = 'calculate-button'onclick=" 
+    calc();
+  "> Calculate </button>
+  <p class="js-total-cost"></p>
+  <script>
+  
+
+
+    function enterKeyCalc(event){
+      if(event.key === 'Enter')
+       {
+        calc();
+      }
+    }
+
+
+    function calc(){
+      let total = 0;
+      const numb = document.querySelector('.js-input');
+      let cost = parseInt(numb.value);
+      if (cost<40 && cost > 0){
+        total = cost + 10;
+        console.log(total);
+      }
+      else {
+        total=cost;
+        console.log(total);
+      }
+      document.querySelector('.js-total-cost').innerHTML=`$${total}`;
+    }
+
+
+
+
+  function sub(){
+    const bValue = document.querySelector('.js-sub');
+    if (bValue.innerHTML === 'Subscribe'){
+      bValue.innerHTML = 'Subscribed';
+      bValue.classList.add('is-subscribed');
+    }
+    else {
+      bValue.innerHTML = 'Subscribe';
+      bValue.classList.remove('is-subscribed');
+    }
+
+  }
+  
+    
+  </script>
+</body>
+
+</html>
+
