@@ -1,4 +1,4 @@
-<h1> Youtube Project Documentation </h1>
+<h1> YouTube Project Documentation </h1>
 
 
 ### Project Overview:
