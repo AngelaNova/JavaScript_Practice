@@ -39,14 +39,14 @@ This project is a clone of the YouTube website, aiming to replicate its user int
 - Responsiveness is ensured through the use of media queries to adapt the layout for various screen sizes.
 
 ### Examples:
-<b>-Full Screen:>/b>
-
+<b>-Full Screen:</b>
+</n>
 <img width="959" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/c60b91d3-00fb-465c-87e8-b28a28205f4b">
-
+</n>
 <b>-Above 1100px:</b>
 
 <img width="863" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/8736c12f-948b-423a-ab55-e1977fc8eb0f">
-
+</n>
 <b>-Below 750px: </b>
 
 <img width="546" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/9f8f86e4-385b-4834-b54a-1910cf42c28f">
