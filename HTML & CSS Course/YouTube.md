@@ -38,4 +38,17 @@ This project is a clone of the YouTube website, aiming to replicate its user int
 - HTML structure and CSS styling are organized and consistent.
 - Responsiveness is ensured through the use of media queries to adapt the layout for various screen sizes.
 
+### Examples:
+-Full Screen:
+<img width="960" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/7b53554a-4851-4b58-a579-37fccb05054e">
+-Above 1100px:
+<img width="836" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/54996984-86fd-4ddd-b94e-b4c264b35455">
+-Below 750px:
+<img width="529" alt="image" src="https://github.com/AngelaNova/JavaScript_Practice/assets/160551855/36333364-1e84-43df-ae19-952e88725b8d">
+
+
+
+
+
+
 This documentation provides an overview of the project structure, HTML elements, and CSS styling used to create the YouTube clone.
