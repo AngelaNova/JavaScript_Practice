@@ -1,6 +1,5 @@
 <h1> Youtube Project Documentation </h1>
 
-Based on the provided HTML and CSS files, let's document the project:
 
 ### Project Overview:
 This project is a clone of the YouTube website, aiming to replicate its user interface and functionality.
