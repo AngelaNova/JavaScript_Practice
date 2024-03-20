@@ -5,5 +5,54 @@
   bottom: 0;
   top: 60.5px;
   width: 72px;
+  z-index: 200px;
   border-right: 0.5px solid rgb(213, 213, 213);
+  padding-top: 5px;
+  cursor:pointer;
+}
+
+.sidebar-link{
+  height:74px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.sidebar-link:hover{
+  background-color: rgba(211, 211, 211, 0.437);
+}
+
+.sidebar-icon{
+  height:24px;
+  margin-bottom: 4px;
+ 
+}
+
+.sidebar-link div{
+  font-size: 10px;
+
+}
+
+@media (min-width:700px) {
+  .sidebar{
+    width:102px;
+  }
+}
+
+@media (min-width:1101px) {
+  .sidebar{
+    width:182px;
+  }
+  .sidebar-link{
+    margin-left: 20px;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+  }
+  .sidebar-icon{
+    margin-right: 10px;
+  }
+  
 }
